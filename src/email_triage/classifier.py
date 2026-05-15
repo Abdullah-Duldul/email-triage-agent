@@ -30,6 +30,7 @@ class EmailInput(BaseModel):
     """Minimal email data required for classification."""
 
     message_id: str
+    thread_id: str = ""
     subject: str
     sender: str
     body: str = Field(default="")
